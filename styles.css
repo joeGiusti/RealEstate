@@ -1,0 +1,194 @@
+body html{
+    height:100%;
+    margin: 0px;
+}
+
+body{
+    /*background-color: #333;*/
+    background-image: url(treetilebucket.jpg);
+    background-repeat: repeat;
+    background-size: 20%, 20%;
+    color: #ddd;
+    font-family:  Lato, sans-serif;
+    font-weight: 1000;
+    margin:-5px;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.topBar{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    margin:0px;
+}
+.topNav{
+    background-color: rgba(0,0,0,0.5);
+    vertical-align: bottom;
+    display: inline-block;    
+    height: 80px;
+    margin:-2.6px;
+    margin-top: 0px;
+
+}
+.topNavSideDiv{
+    width: 0%;
+}
+.topNavButton{
+    width: 25%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+    color: rgb(74, 13, 240);
+
+}
+.topNavButton:hover{
+    background-color: rgba(0,0,0,0);
+}
+.orange{
+    color:rgb(255, 174, 0);
+}
+.red{
+    color:rgb(231, 78, 7);
+}
+.green{
+    color:rgb(19, 126, 37);
+}
+.blue{
+    color:rgb(141, 147, 226);
+}
+.cardDiv{
+    background-color: rgb(20, 20, 20);
+    margin-left: 6.5%;
+    margin-top: 100px;
+    width: 40%;
+    min-height: 400px;
+    height: auto;    border-radius: 8px;
+    /* would be cool if it changed on scroll with js */
+    box-shadow: -15px 25px 15px #000;
+    display: inline-block;
+
+}
+.description{
+    float: right;
+    color: #fff;
+    margin:3%;
+    width: 45%;
+}
+.left{
+    float: left;
+
+}
+.leftMargin{
+    margin-left: 6%;
+}
+.descriptionHeader{
+    text-align: center;
+    color: rgb(74, 13, 240);
+    font-size: 30px;
+    font-weight: 1000;
+}
+.videoWrapper{
+    width: 45%;
+    height: 50vh;
+    margin:0px;
+    margin-top: 20px;;
+    display: inline-block;
+}
+.playButton{
+    width: 200px;
+    height: 50px;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(255, 153, 0);
+    margin: 5px;
+    margin-top: 50px;
+}
+.footerText{
+    float:right;
+    display: inline-block;
+    margin: 20px;
+    margin-right: 10%;
+}
+.name{
+    color: rgb(74, 13, 240);
+
+    font-size: 30px;
+    margin: 0;
+}
+.purple{
+    color: rgb(74, 13, 240);
+}
+footer{
+    background-color: rgb(20, 20, 20);
+    height: 200px;
+    width: 100%;
+    margin-top: 120px;
+}
+.info{
+    color: #999;
+}
+.active{
+    background-color: rgba(0,0,0,0.0);
+}
+/*
+    at a certain point  
+    at biggest vid is on side
+    text goes above video    
+    then there is only one card per row, but video is back on side
+    text goes back above video    
+
+    also 
+    text gets smaller
+    buttons get bigger and sidedivs get smaller
+*/
+@media screen and (max-width: 1300px) and (min-width:1100px){
+    .description{
+        display: block;
+        float: none;
+        width: 90%;
+    }
+    .videoWrapper{
+        display: block;
+        float: none;
+        width: 90%;
+        margin-left: 6%;
+
+    }
+    .left{
+        float: none;
+    }
+}
+@media screen and (max-width: 1100px){
+    .cardDiv{
+        display: block;
+        width: 90%;
+    }
+    .topNavButton{
+        width: 25%;
+    }
+    .topNavSideDiv{
+        width: 0%;
+    }
+}
+@media screen and (max-width: 800px){
+    .description{
+        display: block;
+        float: none;
+        width: 90%;
+    }
+    .videoWrapper{
+        display: block;
+        float: none;
+        width: 90%;
+        height: calc(80vw);
+    }
+    .left{
+        float: none;
+    }
+}
