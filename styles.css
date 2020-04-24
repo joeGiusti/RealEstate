@@ -10,7 +10,8 @@ body{
     background-size: 20%, 20%;
     color: #ddd;
     font-family:  Lato, sans-serif;
-    font-weight: 1000;
+    font-weight: 700;
+    line-height: 1.5em;
     margin:-5px;
 }
 a{
@@ -23,6 +24,10 @@ a{
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     margin:0px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: 1000;
 }
 .topNav{
     background-color: rgba(0,0,0,0.5);
@@ -191,4 +196,79 @@ footer{
     .left{
         float: none;
     }
+}
+.bigVid{
+    margin-left: 5%;
+    margin-right: 5%;;
+    width: 90%;
+    height: 50vw;
+
+}
+    
+.chemCard{
+    box-sizing: border-box;
+    margin: 5%;
+    width: 90%;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+.center{
+    text-align: center;
+    width: 100%;
+}
+
+.textArea{
+    margin: 5%;
+    margin-top: 2%;
+}
+.bigHeader{
+    font-size: 35px;
+}
+.secondHeader{
+    font-size: 30px;
+}
+.smallText{
+    font-size: 12px;
+}
+.docsPage{
+    width: 77vw;
+    height: 90vw;
+}
+.videoQuad{
+    width: 44%;
+    margin:2%;
+    height: 25vw;
+}
+@media screen and (max-width: 1100px){
+    .videoQuad{
+        width: 95%;
+        height: 50vw;
+    }
+}
+.goldText{
+    color: rgb(255, 204, 110);
+}
+.textAreaRight{
+    width: 20%;
+    margin-left: 100px;
+}
+.leftVid{
+
+    height: 30vw;
+    width: 20%;
+    display: inline-block;
+}
+.half{
+    width: 45%;
+    display:  inline-block;
+    height: 25vw;
+    vertical-align: bottom;
+    margin:2%;
+}
+.noMargin{
+    display: inline-block;
+    vertical-align: top;
 }
