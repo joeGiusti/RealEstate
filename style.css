@@ -23,7 +23,7 @@ html body{
     border-radius: 8px;    
     box-sizing: border-box;
     padding: 4px;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
     margin:0;
     display: inline-block;
 }
@@ -44,7 +44,6 @@ html body{
     background-color: #fff;
     box-sizing: border-box;
     padding: 2%;
-    padding-bottom: 6%;
 }
 
 .half{
@@ -109,4 +108,7 @@ html body{
 }
 .ab{
     vertical-align: bottom;
+}
+.bottomPadding{
+    padding-bottom: 6%;
 }
