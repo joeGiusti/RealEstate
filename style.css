@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap');
+
+html body{
+    height: 100%;
+    background-color: green;
+    padding:0;
+    margin: 0;
+    font-family: 'Baloo Bhaina 2';
+}
+
+.topNav{
+    height: 100px;
+    background-color: #fff;
+}
+.section{
+    min-height: 700px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.card{
+    width: 80%;
+    border-radius: 8px;    
+    box-sizing: border-box;
+    padding: 4px;
+    padding-bottom: 5%;
+    margin:0;
+    display: inline-block;
+}
+.g1{
+    background-color: #f5f5f5;
+}
+.g2{
+    background-color: #dcdcdc;
+}
+.g3{
+    background-color: #ababab;
+}
+.insideCard{
+    min-height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    vertical-align: top;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 2%;
+    padding-bottom: 6%;
+}
+
+.half{
+    height: 400px;
+    width: 48%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+    padding: 5px;
+}
+.right{
+    margin-left: 2%;
+}
+.center{
+    text-align: center;
+}
+.textBox{
+    font-family: 'Baloo Bhaina 2';
+    padding: 20px;
+    box-sizing: border-box;
+}
+.header{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin:0;
+}
+.secondHeader{
+    font-size: 30px;
+    font-weight: 800;
+}
+.footer{
+    height: 300px;
+    width: 100%;
+}
+.button{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;    
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+.expandable{
+    height: auto;
+}
+@media screen and (max-width: 1100px){
+    .half{
+       width: 90%;
+       min-height: 550px;
+    }
+}
+.autoMargin{
+    margin-left: auto;
+    margin-right: auto;
+}
+.taller{
+    min-height: 800px;
+}
+.ab{
+    vertical-align: bottom;
+}
