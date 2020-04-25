@@ -1,194 +1,112 @@
-
-<!DOCTYPE html>
+<!DOCTPE html>
 <html>
 <head>
-
+    
 </head>
 <body>
-    <nav>
-        <div class="topBar">Portfolio</div>
-        <div class="topNav topNavSideDiv"></div>
-        <a class="topNav topNavButton  active" href="index.html" >PORTFOLIO</a>
-        <a class="topNav topNavButton " href="cover.html">COVER</a>
-        <a class="topNav topNavButton " href="edu.html">EDU</a>
-        <a class="topNav topNavButton " href="contact.html">CONTACT</a>
-        <div class="topNav topNavSideDiv"></div>    </nav>
-
-    <link rel="stylesheet" href="styles.css">
-    <section>
-      
-        <div class="cardDiv">
-
-            <div class="description" style="display: block;">
-                <h2 class="descriptionHeader">Notes App</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    This native Android Java app loads notes from google's firebase databse and reads them with a text to speech API.
-                    Notes can easily be sourced form quizlet and inserted into the database with just a few clicks.
-                    <!--
-                    The notes can be taken from quizlet automatically with a python script. 
-                    The script takes a link and the rest is automated.
-                    -->
-
-                </p>
-            </div>
-            <div class="videoWrapper" style="display: block;">
-                <iframe class="leftMargin" width="100%" height="80%" src="https://www.youtube.com/embed/b7Edi3MomGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+    <nav class="topNav g1">
+        <div class="mainHeader center">
+            Projects
         </div>
-
-        <div class="cardDiv">
-            <div class="description left">
-                <h2 class="descriptionHeader">Augmented Reality</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    Integrating the vuforia API in Unity 3D this mobile application allows students to view a virtual microscope on their desk.
-                    A lecturer could send questions during a lecture and the listiner can answer by selecting or solving parts of a an interactive 3D puzzel.
-                    <!--
-                    Integrating the vuforia API and framework in Unity 3D this mobile application allows 
-                    teachers to send students questions that are answered on a 3D model viewed with augmented reality. 
-                    In the demonstration students can view a virtual microscope on their desk and select areas on it to view slides.
-                    It is complete with a database driven web client that can send questions and view results in real time.
-                    -->
-
-                </p>
-            </div>
-            <div class="videoWrapper">
-                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/okqKq4wIZ_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-           
+        <div class="navPiece navButton">
+            Projects
         </div>
-        <div draggable="true"  class="cardDiv">
-
-            <div class="description">
-                
-                <h2 class="descriptionHeader">Portal</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    This webGL version of portal was created entirely with C# in Unity 3D. It runs right in the browsers. Please
-                    click play and see if you can solve a quick puzzle. ( it will open in the same tab as an overlay ) Move this card to see the game.
-
-                </p>
-                <!--
-                <button> View Git Code </button>
-                <button> Play Now </button>
-                -->
-            </div>
-            <div class="videoWrapper">
-                <iframe class="leftMargin" width="100%" height="60%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        <div class="navPiece navButton">
+            Projects
         </div>
-        <div class="cardDiv">
-            <div class="description left">
-                <h2 class="descriptionHeader">Atomic simulation</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    Experience a more relatable interaction with atomic mechanics in this webGL browser game. 
-                    Use your mouse to select and manipulate atoms from the virtual periodic table while they interact with each other in real time.
-                    <!--Machine learning and optimization were used to create an efficient algorithm that can calculate aproximate intermolecular forces. -->
-
-                </p>
-            </div>
-            <div class="videoWrapper">
-                <iframe width="100%" height="60%" src="https://www.youtube.com/embed/SBDFgbJtk0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        <div class="navPiece navButton">
+            Contact
         </div>
-                <!--
-        <div class="cardDiv">
-            <div class="description">
-                <h2 class="descriptionHeader">conway</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    This native android app written in Java loads notes from google's firebase databse and reads them with a text to speech API.
-                    The notes can be taken from quizlet automatically with a python script. 
-                    It takes a link as an input and everything else is automatic.
-
-                </p>
-            </div>
+        <div class="navPiece navButton">
+            Projects
         </div>
-        <div class="cardDiv">
-            <div class="description">
-                <h2 class="descriptionHeader">Website connected to App and Unity</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    Real Estate Exam website. Javascript, html 5 compliant
-
-                </p>
-            </div>
-        </div>
-        <div class="cardDiv">
-            <div class="description">
-                <h2 class="descriptionHeader">Foundation Exam tutorial</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    This native android app written in Java loads notes from google's firebase databse and reads them with a text to speech API.
-                    The notes can be taken from quizlet automatically with a python script. 
-                    It takes a link as an input and everything else is automatic.
-
-                </p>
-            </div>
-        </div>
-        <div class="cardDiv">
-            <div class="description">
-                <h2 class="descriptionHeader">This Website</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    This HTML 5 compliant website was created from scratch. 
-                    It is hosted on a github pages site pointed at by a google hosted domain. 
-                    There is a login at /login and it is connected to a database that many of my applications draw data from.
-                    The gaphics are made in GIMP. It would be cool if there was a fractal picture of the website in the website. maybe in real time??
-
-                </p>
-            </div>
-        </div>
-        -->      
-        <div class="cardDiv">
-
-            <div class="description">
-                <h2 class="descriptionHeader">Plane Game</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    A fun little game made in C#.
-
-                </p>
-                <div class="descriptionHeader">
-                    <a class="playButton" href="https://joegiusti.github.io/planeGame/planeGameBuild4/" target="_blank">Play Now</a>
+    </nav>
+    <seciton>
+        <div class="g2">
+            <div class="topSpace"></div>
+            <div class="half outer rad g3">
+                <div class="g0 rad innerHalf">
+                    <div class="half2 g2  videocontainerOuter rad">
+                        <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/b7Edi3MomGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="half2 textHalf">
+                        <h2 class="h2">Speak Notes App</h2>
+                        &nbsp&nbsp&nbsp&nbsp
+                        This native Android Java app loads notes from google's firebase databse and reads them with a text to speech API.
+                        Notes can easily be sourced form quizlet and inserted into the database with just a few clicks.
+                    </div>
                 </div>
-            </div>        
-            <div class="videoWrapper" style="margin-left: 4%">
-                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/q4mceST7aCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>    
-        </div>
-        <div class="cardDiv">
-
-            <div class="description">
-                <h2 class="descriptionHeader">Virtual Memory Garden</h2>
-                <p class="descriptionParagraph"> 
-                    &nbsp&nbsp&nbsp&nbsp
-                    An anniversary gift made in C#.
-                </p>
-                <div class="descriptionHeader">
-                    <a class="playButton" href="https://joegiusti.github.io/videoGarden/" target="_blank">Play Now</a>
+            </div>
+            <div class="half outer rad g3">
+                <div class="g0 rad innerHalf">
+                    <div class="half2 g2  videocontainerOuter rad">
+                        <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/okqKq4wIZ_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="half2 textHalf">
+                        <h2 class="h2">Augmented Reality</h2>
+                        &nbsp&nbsp&nbsp&nbsp
+                        Integrating the Vuforia API in Unity 3D this mobile application allows students to view a virtual microscope on their desk.
+                        A lecturer could send questions during a lecture and the listiner can answer by selecting or solving parts of a an interactive 3D puzzel.
+                    </div>
                 </div>
+            </div>
 
-            </div>   
-            <div class="videoWrapper" style="margin-left: 4%">
-                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/FGzMRh8yCn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>         
+            <div class="whole outer rad g3">
+                <div class="g0 rad innerHalf">
+                    <div class="half2 g2  videocontainerOuter rad">
+                        <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/SBDFgbJtk0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="half2 textHalf">
+                        <h2 class="h2">Atomic Simulation</h2>
+                        <div class="center" style="height:50%">
+                            &nbsp&nbsp&nbsp&nbsp
+                            Experience a more relatable interaction with atomic mechanics in this webGL browser game. 
+                            Use your mouse to select and manipulate atoms from the virtual periodic table while they interact with each other in real time.
+                        </div>
+                        <div class="center"> 
+                            <a class="playButton g2 rad" href="http://joehome.org/atomSimulation" target="_blank">Project Website</a>
+                            <a class="playButton g2 rad" href="http://joehome.org/AtomsWebGLBuild/" target="_blank">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half outer rad g3">
+                <div class="g0 rad innerHalf">
+                    <div class="half2 g2  videocontainerOuter rad">
+                        <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/q4mceST7aCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="half2 textHalf">
+                        <h2 class="h2">Plane Game</h2>
+                        <div class="center" style="height:50%">
+                            &nbsp&nbsp&nbsp&nbsp
+                            A fun little game made in C#
+                        </div>
+                        <div class="center"> 
+                            <a class="playButton g2 rad" href="https://joegiusti.github.io/planeGame/planeGameBuild4/" target="_blank">Play Now</a>
+                        </div>                                                                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="half outer rad g3">
+                <div class="g0 rad innerHalf">
+                    <div class="half2 g2  videocontainerOuter rad">
+                        <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/FGzMRh8yCn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="half2 textHalf">
+                        <h2 class="h2">Virtual Memory garden</h2>
+                        <div class="center" style="height:50%">
+                            &nbsp&nbsp&nbsp&nbsp
+                            An anniversary gift forged in C#
+                        </div>
+                        <div class="center"> 
+                            
+                        </div>                                                                        
+                    </div>                    
+                </div>
+            </div>
         </div>
-
-    </section>  
-    <footer>
-        <div class="footerText">
-            <p class="name">
-                JOSEPH GIUSTI
-            </p>
-            <p class="info">
-                JoeDGiusti (at) Gmail<br><br>     
-                (978) 502 Five Six Two Zero                
-            </p>
-            
-        </div>
-    </footer>  
+    </seciton>
+   
+    <link rel="stylesheet" href="styles2.css">
 </body>
 </html>

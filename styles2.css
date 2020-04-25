@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap');
+
+html body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Baloo Bhaina 2';
+}
+section{
+    text-align: center;
+    padding: 20px;
+    
+}
+.topNav{
+    height: auto;
+}
+.navPiece{
+    width: 25%;
+    height:50px;
+    display: inline-block;
+    margin: 0;
+    padding:0;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+    margin-left: -2px;
+    margin-right: -2px;
+
+}
+.navButton:hover{
+    background-color: #dcdcdc;    
+}
+.g0{
+    background-color: #fff;
+}
+.g1{
+    background-color: #f5f5f5;
+}
+.g2{
+    background-color: #dcdcdc;
+}
+.g3{
+    background-color: #ababab;
+}
+.rad{
+    border-radius: 8px;
+}
+.half{
+    width: 45%;
+    margin:2%;
+    display: inline-block;
+}
+.outer{
+    height: 450px;
+    padding: 5px;
+    padding-bottom: 15px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: -5px 10px 10px #111;
+    box-sizing: border-box;
+}
+.innerHalf{
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.videoContainerOuter{
+    vertical-align: top;
+    padding-bottom: 20px;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.half2{
+    width: 45%;
+    margin:2%;
+    display: inline-block;
+}
+.textHalf{
+    height: 95%;
+    vertical-align: top;
+    
+}
+.mainHeader{
+    height: 100px;
+    font-size: 50px;
+    line-height: 100px;
+}
+.h2{
+    size: 25px;
+    text-align: center;
+}
+.whole{
+    width: 95%;
+    margin: 2%;
+}
+.playButton{
+    width: 140px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #000;
+
+}
+.center{
+    text-align: center;
+}
+.topSpace{
+    height:80px;
+}
+@media screen and (max-width:1100px){
+    .half{
+        width: 95%;
+    }
+}
+@media screen and (max-width:600px){
+    .half2{
+        width: 95%;
+    }
+
+}
