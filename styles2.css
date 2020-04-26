@@ -86,8 +86,9 @@ section{
     line-height: 100px;
 }
 .h2{
-    size: 25px;
+    font-size: 30px;
     text-align: center;
+    font-weight: bold;
 }
 .whole{
     width: 95%;
