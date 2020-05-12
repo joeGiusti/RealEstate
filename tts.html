@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <button id="loadButton">
+            load
+        </button>
+        <button id="speakButton">
+            speak
+        </button>
+        <script>
+
+            var anArray = ["dog", "with", "a","hat"]
+
+            var tts = window.speechSynthesis; 
+            var toSpeak;      
+            document.querySelector("#loadButton").addEventListener('click', ()=>{
+         
+                //toSpeak = window.speechSynthesis.SpeechSynthesisUtterance("hello");
+                anArray.forEach(element => {
+                    speak(element);
+                });
+                //speak("hello");
+            });
+            document.querySelector("#speakButton").addEventListener('click', ()=>{
+         
+                tts.speak(toSpeak);
+
+            });
+
+            function speak(toSpeak) {
+                var msg = new SpeechSynthesisUtterance(toSpeak);
+                msg.rate = 0.7;
+                msg.pitch = 1;
+                window.speechSynthesis.speak(msg);
+            }
+
+        </script>
+    </body>
+</html>
