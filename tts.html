@@ -8,11 +8,15 @@
         <button id="loadButton">
             load
         </button>
-        <button id="speakButton">
+        <button id="speakButton" onclick="speak2">
             speak
         </button>
         <script>
 
+            function speak2(){
+                speechSynthesis.speak(new SpeechSynthesisUtterance("Hello, this is your browser speaking."));   
+            }
+            
             var anArray = ["dog", "with", "a","hat"]
 
             var tts = window.speechSynthesis; 
