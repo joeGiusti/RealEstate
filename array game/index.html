@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" style="height:100%;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,9 +12,9 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/array game.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+  <body style="height:100%; background-color:#000;">
+    <div class="webgl-content" style="height:100%;">
+      <div id="unityContainer" style="width: 98%; height: 90%; margin:1%;"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
