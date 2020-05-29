@@ -1,37 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%;">
     <head>
 
     </head>
-    <body>
+    <body style="height:100%; background-color: #339933;">
 
-        <button id="loadButton">
-            load
-        </button>
-        <button id="speakButton" onclick="speak2">
-            speak
-        </button>
+        <textarea id="mainTextArea" style="height:80%; width:90%; display:block; padding:20px; font-size:20px;">
+            put text here to speak
+        </textarea>
+        <div style="width: 100%; text-align: center;">
+            <button id="loadButton" style="height:50px; width:100px; margin:10px; font-size:20px;">
+                test
+            </button>
+            <button id="speakButton" onclick="speak2" style="height:50px; width:100px; margin:10px; font-size:20px;">
+                speak
+            </button>
+        </div>
+
+
+    <!-- firebase setup scripts -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    <--https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDsTg4EJafxi4Y60ozzP7BQiOm-036UrDo",
+            authDomain: "unity-test-29bde.firebaseapp.com",
+            databaseURL: "https://unity-test-29bde.firebaseio.com",
+            projectId: "unity-test-29bde",
+            storageBucket: "unity-test-29bde.appspot.com",
+            messagingSenderId: "323632391835",
+            appId: "1:323632391835:web:8d5a202336c41b319b483e",
+            measurementId: "G-YMJME22WL0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        firebase.database();
+
+    </script>
+
         <script>
+            /*
+                connect to firebase
+                load set names from firebase into a dropdown menu
+                select one and load the content of that one
+                press button and speak 
 
-            function speak2(){
-                speechSynthesis.speak(new SpeechSynthesisUtterance("Hello, this is your browser speaking."));   
-            }
-            
-            var anArray = ["there is a dog", "with", "a ha tin the house","and the hat is to big"]
+                also add other exercises
+
+                quizlets:
+                basic html, 
+                basic to mid css
+                *javascript in a website
+                *javascript firebase connection
+
+
+
+            */
+
+
+
+            var anArray = ["dog", "with", "a","hat"]
 
             var tts = window.speechSynthesis; 
             var toSpeak;      
             document.querySelector("#loadButton").addEventListener('click', ()=>{
          
                 //toSpeak = window.speechSynthesis.SpeechSynthesisUtterance("hello");
-                anArray.forEach(element => {
-                    speak(element);
-                });
+                //anArray.forEach(element => {
+                //    speak(element);
+                //});
+                speak("test");
                 //speak("hello");
             });
             document.querySelector("#speakButton").addEventListener('click', ()=>{
          
-                tts.speak(toSpeak);
+                speak(document.getElementById("mainTextArea").value );
 
             });
 
@@ -42,6 +92,70 @@
                 window.speechSynthesis.speak(msg);
             }
 
+            function speak2(){
+                speechSynthesis.speak(new SpeechSynthesisUtterance("Hello, this is your browser speaking."));
+            }
+
+            $("#createClassButton").click(function () {
+
+                // get the info from the inputs
+                var className = document.getElementById("newClassNameInput").value;
+                var classDescription = document.getElementById("newClassDescriptionInput").value;
+
+                // save it to firebase
+                var dbRef = firebase.database().ref().child("structA");
+                var key = dbRef.child("classes").push().key;
+                dbRef.child("classes").child(key).set({
+                    imageUrl: "images/chest.jpg",
+                    name: className,
+                    description: classDescription,
+                    exists: true
+                });
+                var newCLassForUser = {};
+                newCLassForUser[key] = classDescription;
+                userRef.child("classes").update(newCLassForUser);
+
+                // reload the page
+                location.reload();
+
+                });
+
+                function loadClassesFromUser(ref) {
+            ref.child("classes").once("value", function (snapshot) {
+                snapshot.forEach(function (c) {
+                    //console.log(c.val());
+                    //showClass(c.val());
+                    classIds.push(c.key);
+                });
+                // use the array after it has been retrieved
+                useClassRefArray();
+            });
+        }
+        function useClassRefArray(classId) {
+            classIds.forEach(function (classId) {
+                removeOld(classId);
+                firebase.database().ref().child("structA").child("classes").child(classId).on("value", function (snap) {
+                    removeOld(classId);
+                    // add this class to the html
+                    addClassHtml(snap.child("name").val(), snap.child("description").val(), snap.child("imageUrl").val(), classId);
+
+                    // add the labs for this class to the html
+                    snap.child("labs").forEach(function (lab) {
+                        console.log(lab.key);
+                        if (lab.child("active").val() == "true") {
+                            addLabHtml(lab.child("name").val(), lab.child("description").val(), lab.child("imageUrl").val(), lab.child("labUrl").val(), classId);
+                        }
+                    });
+
+                    // load the sessions
+                    snap.child("sessions").forEach(function (session) {
+                        console.log("a? = " + session.child("active").val());
+                        if (session.child("active").val() == "true")
+                            addSessionHtml(session.child("name").val(), session.child("description").val(), classId, session.key);
+                    });
+                });
+            });
+        }
         </script>
     </body>
 </html>
