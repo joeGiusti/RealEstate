@@ -12,7 +12,7 @@ body{
     height: 100%;
 }
 .loginHtml{   
-    background-image: url("linkBackground.jpeg");
+    background-image: url("https://joehome.org/CRMDemo/linkBackground.jpeg");
     background-position: center;
     background-size: 100%;    
 }
