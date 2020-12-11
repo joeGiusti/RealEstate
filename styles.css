@@ -142,6 +142,13 @@ footer{
         width: 95%;
     }
 }
+@media screen and (max-width:1450px) and (min-width:1200px){
+    .playButton{
+        width: 40%;
+
+    }
+}
+
 @media screen and (max-width:600px){
     .half2{
         width: 95%;
