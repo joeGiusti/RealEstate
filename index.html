@@ -31,12 +31,52 @@
     </nav>
     
     <seciton>
+        <!--
+        <img src="Resume.pdf"onclick="LoadImage()"></img>
+        <div id="testDiv"></div>
+        -->
+        <script>
+            function LoadVideo1(){
+                document.getElementById("1").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/SBDFgbJtk0E?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo2(){
+                document.getElementById("2").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/vP1K1khK6Cw?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo3(){
+                document.getElementById("3").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/okqKq4wIZ_U?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo4(){
+                document.getElementById("4").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/5wS59xIK2xU?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo5(){
+                document.getElementById("5").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/q4mceST7aCU?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo6(){
+                document.getElementById("6").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/FGzMRh8yCn4?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo7(){
+                document.getElementById("7").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/wHGVLKZqoMA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo8(){
+                document.getElementById("8").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/b7Edi3MomGU?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo9(){
+                document.getElementById("9").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/tHu0i6kBBoA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            function LoadVideo10(){
+                document.getElementById("10").innerHTML = '<iframe load="eager" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/vGY1NQ4fros?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            }
+            
 
+            
+            
+        </script>
         <!-- Atomic simulation -->
         <div class="whole outer rad g3">
             <div class="g0 rad innerHalf">
-                <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/SBDFgbJtk0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="1" class="half2 g2  videocontainerOuter rad">
+                    <img id="load" onclick="LoadVideo1()" src="placeholderImageChem.JPG" height="100%" width="100%"></img>
+                    <!--<iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/SBDFgbJtk0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>
                 <div class="half2 textHalf">
                     <h2 class="h2">Atomic Simulation</h2>
@@ -56,8 +96,9 @@
         <!-- Neural Net Camera -->
         <div class="half outer rad g3">
             <div class="g0 rad innerHalf">
-                <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/vP1K1khK6Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="2" class="half2 g2  videocontainerOuter rad">
+                    <img id="load" onclick="LoadVideo2()" src="NeuralNetThumbnail.JPG" height="100%" width="100%"></img>
+                    <!--<iframe loading="lazy" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/vP1K1khK6Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>
                 <div class="half2 textHalf">
                     <h2 class="h2">Neural Net Camera</h2>
@@ -76,9 +117,9 @@
         <!-- Augmented reality -->
         <div class="half outer rad g3">
             <div class="g0 rad innerHalf">
-                <div class="half2 g2  videocontainerOuter rad">
-                    <!--<iframe class="leftMargin" width="100%" height="100%" srcdoc="<a href='https://www.youtube.com/embed/okqKq4wIZ_U'><img src='https://img.youtube.com/vi/okqKq4wIZ_U/0.jpg'></a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/okqKq4wIZ_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="overflow: hidden;" allowfullscreen></iframe>
+                <div id="3" class="half2 g2  videocontainerOuter rad">
+                    <img id="load" onclick="LoadVideo3()" src="AR_Thumbnail.JPG" height="100%" width="100%"></img>                    
+                    <!--<iframe loading="lazy" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/okqKq4wIZ_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="overflow: hidden;" allowfullscreen></iframe>-->
  
                 </div>
                 <div class="half2 textHalf">
@@ -93,8 +134,9 @@
         <!-- Bubble Pop VR -->
         <div class="whole outer rad g3">
             <div class="g0 rad innerHalf">
-                <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/5wS59xIK2xU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="4" class="half2 g2  videocontainerOuter rad">
+                    <!--<img id="load" onclick="LoadVideo4()" src="bubblePop_Thumbnail.JPG" height="100%" width="100%"></img>-->
+                    <iframe loading="lazy" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/5wS59xIK2xU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="half2 textHalf">
                     <h2 class="h2">VR Bubble Pop</h2>
@@ -113,8 +155,9 @@
         <!-- Plane Game -->
         <div class="half outer rad g3">
             <div class="g0 rad innerHalf">
-                <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/q4mceST7aCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="5" class="half2 g2  videocontainerOuter rad">
+                    <img id="load" onclick="LoadVideo5()" src="plane_game_Thumbnail.JPG" height="100%" width="100%"></img>
+                    <!--<iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/q4mceST7aCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>
                 <div class="half2 textHalf">
                     <h2 class="h2">Plane Game</h2>
@@ -133,8 +176,9 @@
         <!-- Memory Garden -->
         <div class="half outer rad g3">
             <div class="g0 rad innerHalf">
-                <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/FGzMRh8yCn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="6" class="half2 g2  videocontainerOuter rad">
+                    <img id="load" onclick="LoadVideo6()" src="memory_garden_thumbnail.JPG" height="100%" width="100%"></img>
+                    <!--<iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/FGzMRh8yCn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>
                 <div class="half2 textHalf">
                     <h2 class="h2">Memory garden</h2>
@@ -153,8 +197,9 @@
         <!-- Capstone University -->
         <div class="whole outer rad g3">
             <div class="g0 rad innerHalf">
-                <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/wHGVLKZqoMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="7" class="half2 g2  videocontainerOuter rad">
+                    <img id="load" onclick="LoadVideo7()" src="capstone_thumbnail.JPG" height="100%" width="100%"></img>
+                    <!--<iframe loading="lazy" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/wHGVLKZqoMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>
                 <div class="half2 textHalf">
                     <h2 class="h2">Capstone University</h2>
@@ -187,7 +232,8 @@
                     </div>                                                                        
                 </div>    
                 <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/b7Edi3MomGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img id="load" onclick="LoadVideo8()" src="speaknotes_thumbnail.JPG" height="100%" width="100%"></img>
+                    <!-- <iframe loading="lazy" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/b7Edi3MomGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>                
             </div>
         </div>
@@ -205,8 +251,9 @@
                         
                     </div>                                                                        
                 </div>    
-                <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/tHu0i6kBBoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="9" class="half2 g2  videocontainerOuter rad">
+                    <img id="load" onclick="LoadVideo9()" src="portal_thumbnail.JPG" height="100%" width="100%"></img>                    
+                    <!--<iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/tHu0i6kBBoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>                
             </div>
         </div>
@@ -224,8 +271,9 @@
                         
                     </div>                                                                        
                 </div>    
-                <div class="half2 g2  videocontainerOuter rad">
-                    <iframe class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/vGY1NQ4fros" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="10" class="half2 g2  videocontainerOuter rad">
+                    <img id="load" onclick="LoadVideo10()" src="fps_thumbnail.JPG" height="100%" width="100%"></img>                    
+                    <!--<iframe loading="lazy" class="leftMargin" width="100%" height="100%" src="https://www.youtube.com/embed/vGY1NQ4fros" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>                
             </div>
         </div>
