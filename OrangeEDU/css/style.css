@@ -1,0 +1,190 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+/* Global */
+.container{
+    width: 100%;
+    overflow: hidden;
+
+    display: inline-block;
+}
+header{
+    background: #35424a;
+    color:#ffffff;
+    margin: auto;    
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+header ul{
+    padding: 0;
+    margin: 0;
+}
+header li{    
+    display: inline-block ;
+    
+}
+
+header a{
+    padding: 18px 36px;
+}
+header a:hover{
+    background-color:#1c2324;
+    color: rgb(255, 111, 0);    
+    text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+}
+header #branding{
+    float: left;
+}
+header nav{
+    display: inline-block;
+    margin-bottom: -60px;
+
+    margin-top: 60px;
+    height: 95px;
+    font-weight: bold;
+}
+.lightOrange{
+
+    background-color: rgb(255, 111, 0); 
+}
+.bottomBar{
+    height: 2px;
+    width: 100%;
+}
+.lightPurple{
+    background-color: #35357b; 
+}
+.c2{
+
+    float: left;
+    margin: 20px;
+    margin: 0;
+
+}
+.c2 h1{
+    margin: 5px;
+}
+#showcase{
+    height: 70%;
+    background-color: #2d2d3f;
+}
+#showcaseBar{
+    height: 5%;
+    background-color: #1c2324;
+    margin-top: 600px;
+}
+#logoDiv{
+    float: left;
+    width: 240px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#logoImage{
+    height: 80px;
+    width: 50px;
+}
+.logoText{
+    color: rgb(255, 111, 0);
+    margin: 0;
+    display: inline-block;
+    text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+}
+.logoText h1{
+    font-size: 50px;
+    margin: 0;
+}
+.logoText h2{
+    font-size: 15px;
+    margin: 0;
+}
+.cardsSection{
+    padding-bottom: 50px;
+    background-color: #2d2d3f;
+}
+.box{
+    text-align: center;
+    height: 200px;
+    width: 25%;
+    border-radius: 10px;
+    background: #35424a;
+    color:#ffffff;
+    display: inline-block;
+    margin-left: 6%;
+    margin-top: 20px;
+    vertical-align: bottom;    
+    overflow:hidden;
+}
+.dot{
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(102, 102, 102, 0.337);
+}
+.boxInner{
+    margin: 10px;
+    overflow:hidden;
+}
+footer{
+    color: #fff;
+    height: 100px;
+    background: #35424a;
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 1225px){
+    .banner{
+        height: 500px;
+        width: 1225px;
+        background-color: #35424a;
+        z-index: -1;
+        position: absolute;
+        /* 
+          @media query set width, above that width = 100%
+          position absolute, z-index:-1, bottom bar has top margin
+         */
+    }
+
+}
+@media screen and (min-width: 1225px){
+    .banner{
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+
+}
+@media screen and (max-width: 1130px){
+    header a{
+        font-size: 14px;
+        padding: 18px 18px;
+    }
+}
+@media screen and (max-width: 900px){
+    header a{
+        font-size: 10px;
+        padding: 18px 12px;
+    }
+}
+@media screen and (max-width: 800px){
+    .box{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 700px){
+    header a{
+        display: none;
+        font-size: 10px;
+        padding: 18px 12px;
+    }
+}
+@media screen and (max-width: 500px){
+    .box{
+        width: 80%;
+    }
+}

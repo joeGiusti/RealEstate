@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" >        
+        <meta name="keywords" content="game development, unity, vr" >        
+        <meta name="author" content="noone" >        
+        <title>Orange Technology | Home</title>        
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header style="text-align: center;">
+            <div id="logoDiv">
+                <img id="logoImage" src="./img/fireLogo.png">
+                <div class="logoText">
+                    <h1> Orange</h1>
+                    <h2>Educational Technology</h2>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="vision.html" >Our Vision</a></li>
+                    <li><a href="vision.html" >Play</a></li>
+                    <li><a href="team.html" >Our Team</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                    <li><a href="careers.html" >Careers</a></li>
+                </ul>    
+            </nav>
+            <div class="bottomBar lightOrange"></div>
+        </header>
+        <section class="banner" >
+            
+            <!--
+                <iframe src="https://giphy.com/embed/Ovorh6b0MAawDFdMPN" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/space-cosmic-void-Ovorh6b0MAawDFdMPN">via GIPHY</a></p>
+                https://www.w3schools.com/howto/howto_js_slideshow.asp
+                https://www.w3schools.com/howto/howto_css_fullscreen_video.asp
+            -->
+            
+            <!--<div class="container">-->
+            <!-- Put a video real of the things that have been made and stock footage of classrooms -->
+           
+            <img style="width: 100%;" src="./img/ChemGame.jpg" class="slide">
+            <img style="width: 100%;" src="None.jpg" class="slide">
+            <div style="text-align: center;">
+                <div class="dot">
+                        
+                </div>
+            </div>
+
+            <!--</div>
+            -->
+        </section>                
+        <section id="showcaseBar">
+            <!-- Bottom bar of showcase -->
+
+        </section>
+        
+        <section class="cardsSection">
+            <div class="bottomBar lightPurple"></div>
+            <div class="box">
+                <div class="boxInner">
+                    <!--<img src="./img/box1.jpg">-->
+                    <h3>Addictive Education</h3>
+                    <p>We use the technology used to make video games and social media addictive and apply it to education.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <!--<img src="./img/box1.jpg">-->
+                    <h3>Easy Integration</h3>
+                    <p>Just go to the game and play. No signup or download required.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <!--<img src="./img/box1.jpg">-->
+                    <h3>Social Drive</h3>
+                    <p>Social interaction and recognition adds a feeling of relivance to all subjects.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <!--<img src="./img/box1.jpg">-->
+                    <h3>Relivance</h3>
+                    <p>The subject matter is made immediately relivant because it is used withing the games and ranking.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <!--<img src="./img/box1.jpg">-->
+                    <h3>Leveraged Technology</h3>
+                    <p>Cutting edge technology and research is added daily.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <!--<img src="./img/box1.jpg">-->
+                    <h3>Results</h3>
+                    <p>The results of the system speak for themselves.</p>
+                </div>
+            </div>            
+        </section>        
+        <footer>
+            <p>Orange Educational Technology &copy 2018</p>
+        </footer>
+            
+        </div>
+        <script>
+            // Slideshow instructions
+            // https://www.w3schools.com/howto/howto_js_slideshow.asp
+            
+            // The indes of the active slide
+            var activeSlideIndex = 0;
+            
+            // Find all of the slides
+            var slides = document.getElementsByClassName("slide");
+
+            function UpdateSlides(){
+                
+                // Hide all of the slides
+                for(var i=0; i<slides.length; i++){
+                slides[i].style.display = "none";
+                }
+
+                // Show the one that corresponds to the index
+                slides[activeSlideIndex].style.display = "block";    
+            }
+            
+
+        </script>
+        <!--
+            Use xstudios and other sites as templates
+            https://www.cyberdreamvr.com/
+            https://www.torchtechnologies.com/solutions/virtualtraining
+            http://massvirtual.com/
+            https://xstudios.com/
+            https://www.dignitastechnologies.com/contact
+            https://goodgamestudios.com/community/            
+
+        -->
+    </body>
+</html>
