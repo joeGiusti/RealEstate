@@ -31,6 +31,23 @@
     </nav>
     
     <seciton>
+        <style>
+            @keyframes pulse{
+                0%{box-shaddow:0 0 2px gold}
+                50%{box-shaddow:0 0 50px gold}
+                100%{box-shaddow:0 0 2px gold}
+            }
+            .newSiteAlert{
+                height:500px;
+                width:500px;
+                background-color:gold;
+                font-size:40px;    
+                animation: pulse 4s infinite;
+                cursor:pointer;
+            }
+            
+        </style>
+        <div class="newSiteAlert" href="https://joegiusti.github.io/portfolio/">This site is depreciated. Click here to visit the new one.</div>
         <!--
         <img src="Resume.pdf"onclick="LoadImage()"></img>
         <div id="testDiv"></div>
